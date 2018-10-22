@@ -1,3 +1,6 @@
+#ifndef PERSONA_H
+#define PERSONA_H
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -12,7 +15,7 @@ string Direccion_;
 string Localidad_;
 string Provincia_;
 string Pais_;
-string NYA_;
+
 public:
 Persona(string DNI, string Nombre="", string Apellidos="", int Edad=0, string Direccion="", string Localidad="", string Provincia="", string Pais="");
 inline string getDNI()const{return DNI_;};
@@ -37,6 +40,8 @@ bool  mayor();
 
 string getApellidosyNombre();
 };
+
+#endif
 /*string Persona::getApellidosYNombre()
 {
   NYA=Apellidos+", "+Nombre;
